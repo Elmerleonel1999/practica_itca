@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*background-color: #3e43cd;*/
+    font-family: sans-serif;
+}
+
+#sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    /* border: 1px solid rgb(196, 196, 199);*/
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+    font-weight: 300;
+    /*  color: #291b1b;*/
+    top: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#sticky div {
+    width: 50%;
+    border: 2px solid rgb(255, 6, 6);
+}
+
+#sticky div .menuUl {
+    width: 100%;
+    background-color: #ffdf51;
+    margin: 10px;
+    list-style-type: none;
+    line-height: 50px;
+}
+
+li a {
+    color: rgb(3, 0, 165);
+    float: left;
+    width: 25%;
+}
+
+li a:hover {
+    background-color: #a1a09c6b;
+    color: #ff3932;
+    cursor: pointer;
+}
+
+#contenedor {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+#contenedor .materias {
+    width: 200px;
+    height: 250px;
+    margin: 30px;
+    overflow: hidden;
+    /*justify-content: space-around;*/
+    /*margin-left: 30px;*/
+    padding-top: 100px;
+    padding-left: 5px;
+    border: 1px solid#9b9a9a;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+#contenedor .materias:hover {
+    -webkit-box-shadow: 5px 5px 9px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 9px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 9px 4px rgba(0, 0, 0, 0.75);
+}
+
+input {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.boton {
+    position: relative;
+    left: 5px;
+    bottom: 0px;
+}
+
+#contenedor .materias .titulo_materia {
+    color: #f18f1d;
+    padding: 3px 0px;
+    font-size: 15pt;
+    text-transform: capitalize;
+}
+
+#contenedor .materias .titulo_carrera {
+    color: #969696;
+    font-size: small;
+    text-transform: uppercase;
+}
